@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="stadium">
+
+<select id="select" resultType="com.dto.StadiumDTO">
+select * from t_stadium
+
+</select>
+
+
+
+<!-- 	<select id="deptALL" resultType="com.entity.DeptDTO">
+	select deptno, upper(dname) as dname, loc
+	from dept
+	</select>
+	
+	<insert id="insert" parameterType="com.entity.DeptDTO">
+	insert into dept (deptno, dname,loc)
+	values( #{deptno}, #{dname}, #{loc} )
+	
+	</insert>
+	
+	<update id="update" parameterType="com.entity.DeptDTO">
+	update dept
+	set dname = #{dname}, loc = #{loc}
+	where deptno = #{deptno}
+	</update>
+	
+	<delete id="delete" parameterType="int">
+	delete from dept where deptno = #{deptno}
+	</delete>
+	
+	<delete id="deleteHash" parameterType="hashmap">
+	delete from dept where deptno = #{aaa} and dname=#{bbb}
+	</delete>
+	
+	<select id="selectByDeptno" parameterType="int" resultType="com.entity.DeptDTO">
+	select *
+	from dept
+	where deptno = #{deptno}
+	</select>
+	
+	
+	<select id="page" resultType="com.entity.DeptDTO">
+	
+	select * 
+	from dept 
+	order by deptno
+	</select>
+	
+	<select id="count" resultType="int">
+	select count(*) from dept
+	
+	</select> -->
+	
+</mapper>
